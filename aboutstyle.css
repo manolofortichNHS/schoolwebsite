@@ -1,0 +1,181 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background: #9dee5a;
+    color: black;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar li a.active,
+.navbar li a:hover {
+    background: white;
+    color: #30eb49;
+    border-radius: 5px;
+}
+
+/* Mobile Navigation */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked + .menu-icon + .navbar {
+    display: block;
+    flex-direction: column;
+    background: #0072ff;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar li {
+        text-align: center;
+    }
+}
+
+
+section{
+    background-color: rgb(200, 245, 189);
+}
+
+section .section-content h1{
+    color: black;
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  
+  section .section-content h2{
+    color: rgb(245, 7, 7);
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  
+  #ORG{
+    height: 1600px;
+    width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #LOGO{
+    height: 600px;
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  section p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+
+  /* Footer Styles */
+footer {
+    background: #9dee5a;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.footer-col h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin: 5px 0;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-col ul li a:hover {
+    color: white;
+}
+
+.footer-col form {
+    margin-top: 10px;
+}
+
+.footer-col input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.footer-col button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    color: #10182f;
+    cursor: pointer;
+}
+
+.footer-col button:hover {
+    background: #ccc;
+}
